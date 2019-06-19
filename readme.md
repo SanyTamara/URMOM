@@ -1,4 +1,4 @@
-## Team
+## Team 8
 Kauê Marques Barbosa
 
 Guilherme Henrique Ramos dos Santos

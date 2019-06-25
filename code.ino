@@ -1,12 +1,12 @@
-const int motor		= 10;
-const int red		= 7;
-const int blue		= 6;
-const int green		= 5;
-const int butaunZin	= 2;
-int state			= LOW;
+const int motor       = 10;
+const int red         = 7;
+const int blue        = 6;
+const int green       = 5;
+const int butaunZin   = 2;
+int state             = LOW;
 
-long previousMillis = 0;
-long timerTurnOff	= 10000; //timer to turn off
+long previousMillis   = 0;
+long timerTurnOff     = 10000; //timer to turn off
 
 
 void setup() {

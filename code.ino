@@ -1,12 +1,12 @@
 const int motor       = 10;
 const int red         = 7;
-const int blue        = 6;
-const int green       = 5;
+const int green       = 6;
+const int blue        = 5;
 const int butaunZin   = 2;
 int state             = LOW;
 
 long previousMillis   = 0;
-long timerTurnOff     = 10000; //timer to turn off
+long timerTurnOff     = 60000; //timer to turn off (set for 1 minute for now)
 
 
 void setup() {
@@ -21,7 +21,7 @@ void checkButton(){
   if (digitalRead(butaunZin) == 1){
     state = !state;
   };
-  delay(500); //delay to prevent multiple changes consecutively
+  delay(500);
 };
 
 void onOff(){
@@ -36,7 +36,8 @@ void onOff(){
       previousMillis = currentMillis; // Save actual time
       state = !state;
     }
-  } else {
+  }
+ if (state == LOW){
     previousMillis = currentMillis; // Save actual time
     analogWrite(red, 255);
     analogWrite(blue, 0);

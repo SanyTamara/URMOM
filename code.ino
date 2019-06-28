@@ -6,7 +6,7 @@ const int butaunZin   = 2;
 int state             = LOW;
 
 long previousMillis   = 0;
-long timerTurnOff     = 60000; //timer to turn off (set for 1 minute for now)
+long timerTurnOff     = 30000; //timer to turn off (set for 1 minute for now)
 
 
 void setup() {
